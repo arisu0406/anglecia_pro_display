@@ -242,3 +242,112 @@ body.debug .page::after {
   text-align: center;
   color: var(--c-wine);
 }
+/* =========================================================
+   4. ОСОБЕННОСТИ
+   ========================================================= */
+
+.features {
+  position: relative;
+  height: 2750px;
+  padding-top: 107px;
+}
+
+.features__decor {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 1280px;
+  pointer-events: none;
+}
+
+.features__decor--ya {
+  top: 214px;
+}
+
+.features__decor--wh {
+  top: 1117px;
+  height: 413px;
+  overflow: hidden;
+}
+
+.features__decor--k {
+  top: 1821px;
+  height: 918px;
+  overflow: hidden;
+}
+
+.features__decor img {
+  position: relative;
+  z-index: 1;
+}
+
+.features__glyph {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: var(--f-display);
+  font-weight: 400;
+  line-height: 1;
+  color: var(--c-red);
+  transform-origin: 0 0;
+}
+
+.features__glyph--w {
+  font-size: 531px;
+  transform: translate(113px, -41px) rotate(-1deg);
+}
+
+.features__glyph--h {
+  font-size: 426px;
+  transform: translate(824px, -23px) rotate(32deg);
+}
+
+.features__glyph--k {
+  font-size: 1450px;
+  transform: translate(26px, -340px) rotate(17deg);
+}
+
+.feature {
+  position: absolute;
+  z-index: 3;
+  left: 64px;
+}
+
+.feature__title {
+  margin-left: var(--tx, 0);
+  font-family: var(--f-display);
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.feature__text {
+  margin-top: var(--gap, 10px);
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.feature--elegance {
+  top: 722px;
+  --tx: -3px;
+  --gap: 11px;
+}
+
+.feature--contrast {
+  top: 1593px;
+  --gap: 22px;
+}
+
+.feature--effect {
+  top: 1599px;
+  left: 660px;
+  --tx: -2px;
+  --gap: 22px;
+}
+
+.feature--theatre {
+  top: 2341px;
+  left: 660px;
+  --tx: -2px;
+  --gap: 20px;
+}
