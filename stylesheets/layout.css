@@ -207,3 +207,38 @@ body.debug .page::after {
   font-weight: 200;
   transform: rotate(-23deg);
 }
+/* =========================================================
+   3. ЯЗЫКИ
+   ========================================================= */
+
+.languages {
+  position: relative;
+  height: 1088px;
+  padding-top: 116px;
+}
+
+.languages .section-title,
+.features .section-title {
+  margin-left: 2px;
+}
+
+.languages__board {
+  position: absolute;
+  top: 195px;
+  left: 276px;
+  width: 757px;
+  height: 921px;
+}
+
+.languages__list {
+  position: absolute;
+  top: 374px;
+  left: 234px;
+  width: 316px;
+  font-family: var(--f-display);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 50px;
+  text-align: center;
+  color: var(--c-wine);
+}
