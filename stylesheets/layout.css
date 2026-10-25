@@ -351,3 +351,178 @@ body.debug .page::after {
   --tx: -2px;
   --gap: 20px;
 }
+/* =========================================================
+   5. НАЧЕРТАНИЯ 
+   ========================================================= */
+
+.styles {
+  position: relative;
+  height: 1157px;
+  padding-top: 107px;
+}
+
+.styles .section-text {
+  margin-top: 10px;
+  margin-left: 2px;
+}
+
+.poster {
+  position: absolute;
+  width: 492px;
+  height: 732px;
+  background-color: var(--c-paper);
+  color: #000;
+  transform-origin: 0 0;
+}
+
+/* шурупы */
+.poster::before,
+.poster::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  width: 14px;
+  height: 14px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Ccircle cx='7' cy='7' r='7' fill='%23CF9F4B'/%3E%3Cpath d='M3.5 2.5l7 9M11 3.5l-8 6' stroke='%23625035' stroke-width='1.1'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.poster::before {
+  left: 19px;
+}
+
+.poster::after {
+  left: 468px;
+  top: 19px;
+}
+
+.poster__head {
+  height: 88px;
+  padding-top: 20px;
+  background-color: var(--c-red);
+  color: var(--c-white);
+  text-align: center;
+}
+
+.poster__title {
+  display: block;
+  font-family: var(--f-display);
+  font-weight: 400;
+  padding-right: 8px;
+  font-size: 32px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.poster__month {
+  display: block;
+  margin-top: 4px;
+  font-family: var(--f-text);
+  font-size: 21px;
+  line-height: 1;
+}
+
+.poster__table {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  width: 448px;
+  table-layout: fixed;
+  border-top: 1px solid #000;
+}
+
+.poster__table tr {
+  height: 40px;
+  border-bottom: 1px solid #000;
+}
+
+.poster__table tr:last-child {
+  height: 45px;
+}
+
+.poster__table td {
+  padding-top: 5px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.poster__col-date  { width: 117px; }
+.poster__col-style { width: 233px; }
+.poster__col-time  { width: 97px; }
+
+/* 1-я колонка — дата */
+.poster__table td:nth-child(1) {
+  font-family: var(--f-text);
+  font-size: 20px;
+  color: var(--c-red);
+}
+
+/* 2-я колонка — начертание */
+.poster__table td:nth-child(2) {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  padding-right: 8px;
+  font-family: var(--f-display);
+  font-size: 24px;
+  text-align: center;
+}
+
+/* 3-я колонка — время */
+.poster__table td:nth-child(3) {
+  font-family: var(--f-text);
+  font-size: 20px;
+  padding-left: 14px;
+  color: var(--c-red);
+  text-align: center;
+}
+
+/* начертания */
+.w200 { font-weight: 200; }
+.w300 { font-weight: 300; }
+.w400 { font-weight: 400; }
+.w500 { font-weight: 500; }
+.w600 { font-weight: 600; }
+.w700 { font-weight: 700; }
+.w900 { font-weight: 900; }
+.it   { font-style: italic; }
+
+/* положение афиш */
+.poster--front {
+  z-index: 3;
+  top: 283px;
+  left: 398px;
+}
+
+.poster--back {
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.poster--back .poster__head {
+  background-color: var(--c-wine-dark);
+}
+
+.poster--back::before,
+.poster--back::after {
+  opacity: 0.5;
+  filter: saturate(0.6) brightness(0.8);
+}
+
+.poster--left {
+  top: 343px;
+  left: 71px;
+  transform: scale(80%);
+}
+
+.poster--left::after {
+  display: none;
+}
+
+.poster--right {
+  top: 358px;
+  left: 791px;
+  transform:  scale(80%);
+}
+
+.poster--right::before {
+  display: none;
+}
