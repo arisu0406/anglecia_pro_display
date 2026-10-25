@@ -570,3 +570,48 @@ body.debug .page::after {
 .glyphs__grid li.lg {
   font-size: 93px;
 }
+/* =========================================================
+   7. ЛИГАТУРЫ
+   ========================================================= */
+
+.ligatures {
+  position: relative;
+  height: 1240px;
+  padding-top: 105px;
+}
+
+.ligatures .section-title {
+  margin-left: -2px;
+}
+
+.ligatures .section-text {
+  margin-top: 10px;
+  margin-left: 3px;
+}
+
+.wardrobe {
+  position: absolute;
+  top: 350px;
+  left: 215px;
+  width: 858px;
+  height: 813px;
+}
+
+.wardrobe__tag {
+  position: absolute;
+  top: 14px;
+  width: 72px;
+  font-family: var(--f-display);
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  color: var(--c-white);
+  font-variant-ligatures: common-ligatures discretionary-ligatures;
+}
+
+.wardrobe__tag--1 { left: 123px; }
+.wardrobe__tag--2 { left: 271px; }
+.wardrobe__tag--3 { left: 410px; }
+.wardrobe__tag--4 { left: 548px; top: 18px; }
+.wardrobe__tag--5 { left: 678px; top: 18px; }
