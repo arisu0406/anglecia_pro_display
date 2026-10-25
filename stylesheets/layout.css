@@ -526,3 +526,47 @@ body.debug .page::after {
 .poster--right::before {
   display: none;
 }
+/* =========================================================
+   6. ГЛИФЫ
+   ========================================================= */
+
+.glyphs {
+  position: relative;
+  height: 1053px;
+  padding-top: 355px;
+  background: url("../images/balusters.svg") left top / 144px 236px repeat-x;
+}
+
+.glyphs .section-text {
+  margin-top: 10px;
+}
+
+.glyphs__grid {
+  position: absolute;
+  top: 579px;
+  left: 62px;
+  display: grid;
+  grid-template-columns: repeat(10, 112px);
+  grid-auto-rows: 112px;
+  gap: 3px;
+  padding: 0 0 3px 3px;
+  background-color: var(--c-glyph);
+}
+
+.glyphs__grid li {
+  --base: 81px;
+  --dx: 0px;
+  padding-top: calc(var(--base) - 0.75em);
+  padding-right: 4px;
+  background-color: var(--c-red);
+  color: var(--c-glyph);
+  font-family: var(--f-display);
+  font-weight: 400;
+  font-size: 64px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.glyphs__grid li.lg {
+  font-size: 93px;
+}
