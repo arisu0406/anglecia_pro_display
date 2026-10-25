@@ -123,3 +123,87 @@ body.debug .page::after {
   font-size: 24px;
   line-height: 24px;
 }
+/* =========================================================
+   2. О ШРИФТЕ
+   ========================================================= */
+
+.about {
+  position: relative;
+  z-index: 1;
+  height: 1148px;
+  padding-top: 119px;
+  background: url("../images/about-wave.svg") left top / 1280px 1148px no-repeat;
+}
+
+.about__word {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  pointer-events: none;
+}
+
+
+.about__letter {
+  position: absolute;
+  font-family: var(--f-display);
+  font-weight: 400;
+  line-height: 1;
+  color: var(--c-white);
+  transform-origin: 0 0;
+  white-space: nowrap;
+}
+
+.about__letter--t1 {
+  left: 103px;
+  top: 340px;
+  font-size: 477px;
+  transform: rotate(20deg);
+}
+
+.about__letter--h {
+  left: 204px;
+  top: 701px;
+  font-size: 141px;
+  font-weight: 300;
+  font-style: italic;
+  transform: rotate(-47deg);
+}
+
+.about__letter--e1 {
+  left: 354px;
+  top: 550px;
+  font-size: 237px;
+  transform: rotate(-10deg);
+}
+
+.about__letter--a {
+  left: 607px;
+  top: 557px;
+  font-size: 490px;
+  font-weight: 200;
+  transform: rotate(37deg);
+}
+
+.about__letter--t2 {
+  left: 772px;
+  top: 387px;
+  font-size: 414px;
+  color: var(--c-gold);
+  transform: rotate(39deg);
+}
+
+.about__letter--r {
+  left: 699px;
+  top: 557px;
+  font-size: 575px;
+  font-style: italic;
+  transform: rotate(-7deg);
+}
+
+.about__letter--e2 {
+  left: 1083px;
+  top: 739px;
+  font-size: 142px;
+  font-weight: 200;
+  transform: rotate(-23deg);
+}
