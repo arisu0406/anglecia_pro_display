@@ -615,3 +615,31 @@ body.debug .page::after {
 .wardrobe__tag--3 { left: 410px; }
 .wardrobe__tag--4 { left: 548px; top: 18px; }
 .wardrobe__tag--5 { left: 678px; top: 18px; }
+/* =========================================================
+   8. ПОДВАЛ
+   ========================================================= */
+
+.footer {
+  position: relative;
+  height: 276px;
+  padding-top: 99px;
+  font-family: var(--f-display);
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: var(--c-red);
+}
+
+.footer__item {
+  position: absolute;
+  margin: 0;
+}
+
+.footer__item dd {
+  margin: 0;
+}
+
+.footer__item--student { left: 66px; }
+.footer__item--curator { left: 535px; }
+.footer__item--group   { left: 1033px; }
