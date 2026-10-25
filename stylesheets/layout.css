@@ -92,3 +92,34 @@ body.debug .page::after {
 .section-text--dark {
   color: var(--c-wine-dark);
 }
+/* =========================================================
+   1. Первая страница
+   ========================================================= */
+
+.hero {
+  position: relative;
+  height: 844px;
+  background: url("../images/hero-scene.svg") center top / 1280px 844px no-repeat;
+  text-align: center;
+}
+
+.hero__title {
+  position: absolute;
+  top: 319px;
+  left: 0;
+  right: 0;
+  font-family: var(--f-display);
+  font-weight: 500;
+  font-size: 76px;
+  line-height: 76px;
+  text-transform: uppercase;
+}
+
+.hero__subtitle {
+  position: absolute;
+  top: 469px;
+  left: 0;
+  right: 0;
+  font-size: 24px;
+  line-height: 24px;
+}
