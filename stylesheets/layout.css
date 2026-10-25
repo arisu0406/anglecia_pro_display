@@ -1,0 +1,94 @@
+:root {
+  /* цвета из макета */
+  --c-dark: #222121;
+  --c-red: #8D0325;
+  --c-wine: #75021F;
+  --c-wine-dark: #560D1F;
+  --c-gold: #CF9F4B;
+  --c-white: #FFFFFF;
+  --c-cream: #F1E9D6;
+  --c-glyph: #F0E8DC;
+  --c-paper: #EAE4DB;
+
+  /* шрифты */
+  --f-display: "Anglecia Pro Display", "Times New Roman", serif;
+  --f-text: "Anglecia Pro Text", "Times New Roman", serif;
+
+  /* сетка */
+  --page-width: 1280px;
+  --gutter: 64px;
+}
+
+body {
+  background:
+    linear-gradient(#FAE9CE, #E1CFB1) left bottom / 100% 2569px no-repeat,
+    var(--c-dark);
+  color: var(--c-white);
+  font-family: var(--f-text);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.page {
+  position: relative;
+  width: var(--page-width);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+body.debug .page::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 999;
+  background: url("../design/mockup.png") center top / 1280px auto no-repeat;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ---------- Общие заголовки секций ---------- */
+
+.section-head {
+  position: relative;
+  z-index: 3;
+  padding-left: var(--gutter);
+}
+
+.section-title {
+  font-family: var(--f-display);
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 64px;
+  text-transform: uppercase;
+  color: var(--c-white);
+}
+
+.section-title--white {
+  color: var(--c-white);
+}
+
+.section-title--red {
+  color: var(--c-red);
+}
+
+.section-text {
+  margin-top: 11px;
+  font-family: var(--f-text);
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--c-white);
+}
+
+.section-text--dark {
+  color: var(--c-wine-dark);
+}
